@@ -33,7 +33,7 @@ contention for improved performance.
 ### Tested on:
 
 - **Os Name:** Pop!_OS 22.04 LTS
-- **CPU:** Intel core i7-9750H CPU - **ONLY 6 Threads over 12** where used for testing
+- **CPU:** Intel core i7-9750H CPU - **ONLY 4 Threads over 12** where used for testing
 - **Memory:** 32 GiB
 
 | Seed | Size Of Numbers | Time Takes Standard Prime | Time Takes Optimized Prime | Efficiency |
