@@ -22,7 +22,7 @@ prime by iterating over potential divisors up to the square root of the number.
 The optimized prime algorithm implemented in the `myPrimeCount.c` file utilizes the
 **[Miller-Rabin primality test](https://www.geeksforgeeks.org/primality-test-set-3-miller-rabin/)**, a
 probabilistic algorithm that efficiently determines whether a given number is prime. The algorithm is **parallelized**
-using **pthreads** to process numbers in **batches**, **reducing** function **calls** to `isPrime` and **minimizing
+using **pthreads** to process numbers in **batches**, **reducing** function **calls** to isPrime and **minimizing
 mutex**
 contention for improved performance.
 
@@ -31,6 +31,7 @@ contention for improved performance.
 ## Benchmarks
 
 ### Tested on:
+
 - **Os Name:** Pop!_OS 22.04 LTS
 - **CPU:** Intel core i7-9750H CPU - **ONLY 6 Threads over 12** where used for testing
 - **Memory:** 32 GiB
