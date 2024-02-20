@@ -1,12 +1,18 @@
-.PHONY: all
-all: generator primeCounter
+CFLAGS = -O3 -Wall
 
-generator:  generator.c
+.PHONY: all
+all: generator primeCounter myPrimeCount
+
+generator: generator.c
 	gcc -o randomGenerator generator.c
 
-primeCounter:	primeCounter.c
+primeCounter: primeCounter.c
 	gcc -o primeCounter primeCounter.c
 
+myPrimeCount: myPrimeCount.c
+	gcc $(CFLAGS) -o myPrimeCount myPrimeCount.c -lm -pthread
+
 .PHONY: clean
+
 clean:
-	-rm randomGenerator primeCounter 2>/dev/null
+	-rm randomGenerator primeCounter myPrimeCount 2>/dev/null
